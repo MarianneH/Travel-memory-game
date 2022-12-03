@@ -1,5 +1,6 @@
 import styles from "./card.module.css";
 import { useEffect, useState } from "react";
+import { BsPatchQuestionFill } from "react-icons/bs";
 
 function Card({
   img,
@@ -20,6 +21,8 @@ function Card({
     setFlip(flippedCards[index]);
     if (solvedMemories.includes(index)) {
       setShowInfoButton(true);
+    } else {
+      setShowInfoButton(false);
     }
     // eslint-disable-next-line
   }, [flippedCards]);
@@ -49,9 +52,13 @@ function Card({
         <div className={`${styles.cardFace} ${styles.cardFaceFront}`}></div>
         <div className={`${styles.cardFace} ${styles.cardFaceBack}`}>
           <img className={styles.cardImg} src={img} alt={name} />
+          {showInfoButton && (
+            <div className={styles.more}>
+              <BsPatchQuestionFill />
+            </div>
+          )}
         </div>
       </div>
-      <div></div>
     </div>
   );
 }

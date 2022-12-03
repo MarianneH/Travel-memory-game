@@ -11,7 +11,7 @@ function Footer() {
 
       <a
         className={styles.projectLink}
-        href="https://github.com/Hackathon-december-2022/Travel-memory-game"
+        href="https://github.com/MarianneH/Travel-memory-game"
         target="_blank"
         rel="noreferrer"
       >
