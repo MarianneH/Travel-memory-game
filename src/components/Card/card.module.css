@@ -104,19 +104,15 @@
 }
 .more svg {
   position: absolute;
-  top: calc(50% - 50% / 2);
-  right: calc(50% - 50% / 2);
+  top: calc(30% - 50% / 2);
+  right: calc(30% - 50% / 2);
   background-color: transparent;
   cursor: pointer;
-  width: 50% !important;
+  width: 25% !important;
   height: auto;
-  opacity: 0;
-  transition: opacity 0.5s;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
-.more svg:hover {
-  opacity: 1;
-}
+
 @media screen and (min-width: 800px) {
   .card {
     display: flex;
@@ -132,5 +128,20 @@
     box-shadow: 1px 1px 3px #888888;
     width: 22%;
     margin: 0.4vw;
+  }
+  .more svg {
+    position: absolute;
+    top: calc(50% - 50% / 2);
+    right: calc(50% - 50% / 2);
+    background-color: transparent;
+    cursor: pointer;
+    width: 50% !important;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .more svg:hover {
+    opacity: 1;
   }
 }

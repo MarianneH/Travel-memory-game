@@ -14,6 +14,8 @@ function Card({
   solvedMemories,
   flippedCards,
   memorySize,
+  setShowModal,
+  setModalIndex,
 }) {
   const [flip, setFlip] = useState(false);
   const [showInfoButton, setShowInfoButton] = useState(false);
@@ -37,6 +39,10 @@ function Card({
       }
     }
   }
+  function handleInfoClick() {
+    setShowModal(true);
+    setModalIndex(index);
+  }
   return (
     <div
       className={memorySize > 11 ? `${styles.card}` : `${styles.cardx8}`}
@@ -53,7 +59,7 @@ function Card({
         <div className={`${styles.cardFace} ${styles.cardFaceBack}`}>
           <img className={styles.cardImg} src={img} alt={name} />
           {showInfoButton && (
-            <div className={styles.more}>
+            <div onClick={handleInfoClick} className={styles.more}>
               <BsPatchQuestionFill />
             </div>
           )}

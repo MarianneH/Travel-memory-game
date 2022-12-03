@@ -3,6 +3,7 @@ import Card from "../Card/Card";
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import CardsData from "./CardsData";
+import InfoModal from "../InfoModal/InfoModal";
 
 function MemoryBoard() {
   const [memoryCards, setMemoryCards] = useState(CardsData);
@@ -18,6 +19,8 @@ function MemoryBoard() {
   );
   const [memorySize, setMemorySize] = useState(12);
   const [layover, setLayover] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [modalIndex, setModalIndex] = useState(1);
 
   function shuffleCards(array) {
     return array.sort(() => {
@@ -140,6 +143,8 @@ function MemoryBoard() {
             flippedCards={flippedCards}
             memorySize={memorySize}
             setLayover={setLayover}
+            setShowModal={setShowModal}
+            setModalIndex={setModalIndex}
           />
         ))}
       </div>
@@ -147,6 +152,9 @@ function MemoryBoard() {
         Restart
       </button>
       {youWon && <Confetti></Confetti>}
+      {showModal && (
+        <InfoModal setShowModal={setShowModal} data={CardsData[modalIndex]} />
+      )}
     </div>
   );
 }
