@@ -97,6 +97,14 @@ function MemoryBoard() {
   function handleSelect(elem) {
     const selected = elem.target.value;
     setMemorySize(selected);
+    setCardIndex([]);
+    setClickedCards((prev) => []);
+    setSolvedMemories([]);
+    setPrevIndex(null);
+    setMoves(0);
+    setYouWon(false);
+    setRestart(!restart);
+    setFlippedCards((prev) => Array(CardsData.length * 2).fill(false));
   }
 
   return (
@@ -132,7 +140,6 @@ function MemoryBoard() {
             flippedCards={flippedCards}
             memorySize={memorySize}
             setLayover={setLayover}
-
           />
         ))}
       </div>

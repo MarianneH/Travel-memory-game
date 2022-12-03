@@ -15,8 +15,12 @@ function Card({
   memorySize,
 }) {
   const [flip, setFlip] = useState(false);
+  const [showInfoButton, setShowInfoButton] = useState(false);
   useEffect(() => {
     setFlip(flippedCards[index]);
+    if (solvedMemories.includes(index)) {
+      setShowInfoButton(true);
+    }
     // eslint-disable-next-line
   }, [flippedCards]);
 
@@ -47,6 +51,7 @@ function Card({
           <img className={styles.cardImg} src={img} alt={name} />
         </div>
       </div>
+      <div></div>
     </div>
   );
 }
