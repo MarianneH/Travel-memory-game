@@ -21,6 +21,7 @@ function MemoryBoard() {
   const [layover, setLayover] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(1);
+  const [modalData, setModalData] = useState(2);
 
   function shuffleCards(array) {
     return array.sort(() => {
@@ -109,6 +110,7 @@ function MemoryBoard() {
     setRestart(!restart);
     setFlippedCards((prev) => Array(CardsData.length * 2).fill(false));
   }
+  useEffect(() => {}, [modalIndex]); // HEEEEEEEEREEEE MOOOOORE COOOOOODE
 
   return (
     <div className={styles.all}>

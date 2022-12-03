@@ -41,7 +41,7 @@ function Card({
   }
   function handleInfoClick() {
     setShowModal(true);
-    setModalIndex(index);
+    setModalIndex(id);
   }
   return (
     <div

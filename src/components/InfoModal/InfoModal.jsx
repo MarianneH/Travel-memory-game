@@ -3,7 +3,6 @@ import styles from "./infoModal.module.css";
 
 function InfoModal({ setShowModal, data }) {
   const { img, name, info } = data;
-  console.log(name);
 
   //   function handleClick() {
   //     setShowModal(false);
@@ -15,6 +14,7 @@ function InfoModal({ setShowModal, data }) {
   //   }, [data]);
   return (
     <>
+      {data.name}
       {/* <div className={styles.modal_container} onClick={handleClick}>
         <div className={styles.modal}>
           <div className={styles.modal_header}>
