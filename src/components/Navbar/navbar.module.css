@@ -4,29 +4,23 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: var(--fourth-color);
+  background-color: var(--primary-accent);
   padding: 16px;
+}
+.logoImage {
+  width: 50px;
+  aspect-ratio: 1/1;
 }
 
 .headline {
-  background-color: var(--fourth-color);
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
 }
-
 .rules {
   text-decoration: none;
   color: black;
   display: flex;
   align-items: center;
   font-weight: bold;
-  background-color: var(--fourth-color);
-}
-
-.navbarLogo {
-  height: 80%;
-  background-color: var(--fourth-color);
-}
-
-.headline {
-  color: white;
-  font-size: 1.8rem;
 }

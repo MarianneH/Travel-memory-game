@@ -1,6 +1,6 @@
 .card,
 .cardx8 {
-  display: inline-block;
+  display: flex;
   width: 22vw;
   aspect-ratio: 1/1;
   margin: 1vw;
@@ -39,7 +39,7 @@
 }
 
 .cardFaceFront {
-  background-color: var(--primary-card);
+  background-color: var(--secondary-accent);
   opacity: 0.8;
   background-image: linear-gradient(
       30deg,
@@ -102,14 +102,25 @@
   height: 100%;
   object-fit: cover;
 }
+.more svg {
+  position: absolute;
+  top: calc(30% - 50% / 2);
+  right: calc(30% - 50% / 2);
+  background-color: transparent;
+  cursor: pointer;
+  width: 25% !important;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
 
 @media screen and (min-width: 800px) {
   .card {
+    display: flex;
     width: 15%;
     margin: 0.4vw;
   }
   .cardx8 {
-    display: inline-block;
+    display: flex;
     aspect-ratio: 1/1;
     margin: 1vw;
     border-radius: 3px;
@@ -117,5 +128,18 @@
     box-shadow: 1px 1px 3px #888888;
     width: 22%;
     margin: 0.4vw;
+  }
+  .more svg {
+    position: absolute;
+    top: calc(50% - 50% / 2);
+    right: calc(50% - 50% / 2);
+    background-color: transparent;
+    cursor: pointer;
+    width: 50% !important;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  .more svg:hover {
+    opacity: 1;
   }
 }
