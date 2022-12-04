@@ -10,13 +10,17 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
-        <Routes>
-          <Route element={<Home />} exact path="/" />
-          <Route element={<Rules />} path="/rules" />
-          <Route element={<AboutUs />} path="/about-us" />
-        </Routes>
-        <Footer />
+        <div className="grid_main_wrapper">
+          <Navbar />
+          <Routes>
+            <Route element={<Home />} exact path="/" />
+            <Route element={<Rules />} path="/rules" />
+            <Route element={<AboutUs />} path="/about-us" />
+          </Routes>
+        </div>
+        <div className="grid_footer">
+          <Footer />
+        </div>
       </Router>
     </div>
   );

@@ -39,7 +39,7 @@
 }
 
 .cardFaceFront {
-  background-color: var(--primary-card);
+  background-color: var(--secondary-accent);
   opacity: 0.8;
   background-image: linear-gradient(
       30deg,
@@ -136,10 +136,8 @@
     background-color: transparent;
     cursor: pointer;
     width: 50% !important;
-    height: auto;
     opacity: 0;
     transition: opacity 0.5s;
-    color: rgba(255, 255, 255, 0.8);
   }
   .more svg:hover {
     opacity: 1;

@@ -1,33 +1,43 @@
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: var(--fourth-color);
+  background-color: var(--primary-accent);
   bottom: 0;
+  padding: 8px;
+}
+.ownLinks {
+  display: flex;
+  align-items: center;
 }
 
 .aboutUs {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.githubLink {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 8px;
   display: flex;
   align-items: center;
-  padding-left: 1rem;
-  font-weight: bold;
-  background-color: var(--fourth-color);
+  height: 40px;
+}
+.githubLink img {
+  height: 100%;
+  margin-right: 2px;
 }
 
-.projectLink {
-  width: 60px;
-  aspect-ratio: 1/1;
+.link {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
   display: flex;
   justify-content: center;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  background-color: var(--fourth-color);
-}
-
-.projectLink img {
-  background-color: var(--fourth-color);
+  font-size: small;
 }

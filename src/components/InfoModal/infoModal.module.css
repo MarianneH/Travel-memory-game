@@ -1,6 +1,6 @@
 .modal_container {
   background-color: rgba(0, 0, 0, 0.3);
-  font-family: var(--main-font);
+  font-family: var(--base-font);
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -13,7 +13,7 @@
   z-index: 10;
 }
 .modal {
-  background-color: #fff;
+  background-color: var(--secondary-accent);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 24px;
   width: 90%;

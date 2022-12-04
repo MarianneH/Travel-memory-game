@@ -5,17 +5,28 @@ import githublogo from "../../assets/github-logo.png";
 function Footer() {
   return (
     <div className={styles.footer}>
-      <Link to="/about-us" className={styles.aboutUs}>
-        About us
-      </Link>
+      <div className={styles.ownLinks}>
+        <Link to="/about-us" className={styles.aboutUs}>
+          About us
+        </Link>
+        <a
+          className={styles.githubLink}
+          href="https://github.com/MarianneH/Travel-memory-game"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={githublogo} alt="github-logo" />
+          Github Project
+        </a>
+      </div>
 
       <a
-        className={styles.projectLink}
-        href="https://github.com/MarianneH/Travel-memory-game"
+        className={styles.link}
+        href="https://icons8.com/"
         target="_blank"
         rel="noreferrer"
       >
-        <img src={githublogo} alt="github-logo" />
+        Icons from Icons8.com
       </a>
     </div>
   );

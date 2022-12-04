@@ -7,24 +7,20 @@
   font-family: var(--base-font);
 }
 
-/*:root {
-  --base-font: "Roboto", sans-serif;
-  --primary-accent: #f7ece6;
-  --secondary-accent: #f7c54577;
-  --third-color: #e5e5f7;
-  --fourth-color: #ff616d;
-  --primary-card: #f7ece6;
-  --secondary-card: #f7c545;
-  --third-card: #f7c54577;
-}*/
+.grid_main_wrapper {
+  min-height: calc(100vh - 79px);
+  background-color: var(--secondary-accent);
+}
+.grid_footer {
+  height: 79px;
+}
 
 :root {
   --base-font: "Roboto", sans-serif;
-  --primary-accent: #f7efe6;
-  --secondary-accent: #617aff;
+  --primary-accent: #2ec4b6;
+  --secondary-accent: #f7efe6;
   --third-color: #e5e5f7;
-  --fourth-color: #617aff;
-  --primary-card: #f7ece6;
-  --secondary-card: #f7c545;
-  --third-card: #f7c54577;
+  --fourth-color: var(--secondary-accent);
+  --secondary-card: #ffbf69;
+  --third-card: #ff9f1c;
 }
