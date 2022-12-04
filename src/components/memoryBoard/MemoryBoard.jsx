@@ -110,7 +110,6 @@ function MemoryBoard() {
     setRestart(!restart);
     setFlippedCards((prev) => Array(CardsData.length * 2).fill(false));
   }
-  useEffect(() => {}, [modalIndex]); // HEEEEEEEEREEEE MOOOOORE COOOOOODE
 
   return (
     <div className={styles.all}>
@@ -155,7 +154,10 @@ function MemoryBoard() {
       </button>
       {youWon && <Confetti></Confetti>}
       {showModal && (
-        <InfoModal setShowModal={setShowModal} data={CardsData[modalIndex]} />
+        <InfoModal
+          setShowModal={setShowModal}
+          data={CardsData.filter((el) => el.id === modalIndex)}
+        />
       )}
     </div>
   );
