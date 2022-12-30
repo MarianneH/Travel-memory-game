@@ -1,31 +1,25 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 32px;
+}
+.sub_container {
+  width: 90vw;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+.headline {
+  margin: 1rem;
+  text-align: center;
 }
 
-.introduction {
-  padding: 10px;
-}
-
-.rulesHeadline {
-  padding: 10px;
-}
 .listItems {
-  padding: 10px;
   list-style: none;
 }
 
 @media screen and (min-width: 800px) {
-  .container {
-    justify-content: flex-start;
-
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-  }
-  .rulesHeadline {
-    padding-top: 1.5rem;
+  .sub_container {
+    width: 50vw;
   }
 }

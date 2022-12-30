@@ -28,6 +28,14 @@ function Footer() {
       >
         Icons from Icons8.com
       </a>
+      <a
+        className={styles.link}
+        href="https://unsplash.com/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Images from Unsplash.com
+      </a>
     </div>
   );
 }

@@ -3,36 +3,29 @@ import styles from "./rules.module.css";
 function Rules() {
   return (
     <div className={styles.container}>
-      <h2 className={styles.headline}>Travel-Memory-Game</h2>
-      <p className={styles.introduction}>
-
-        You dont know where to spend your next Holidays at? No Problem, we will
-        helpt you making a Decision.
-        <br /> With our Travel Memory Game we provide you with some beautiful
-        Places to visit around the World and you will also have fun to explore
-        them over a round of Memory.
-      </p>
-      <h2 className={styles.rulesHeadline}> Here are the Rules:</h2>
-      <ul className={styles.list}>
-        <li className={styles.listItems}>
-          The objective is to collect the most pairs of cards.
-        </li>
-        <li className={styles.listItems}>
-          On each turn, a player turns over any two cards and keeps them if the
-          cards match.
-        </li>
-        <li className={styles.listItems}>
-          If they successfully match a pair they get a point.
-        </li>
-        <li className={styles.listItems}>
-          When a player turns over two cards that do not match, the cards turn
-          face down again (in the same position) and it becomes the next
-          player’s turn.
-        </li>
-        <li className={styles.listItems}>
-          The player with the most pairs wins.
-        </li>
-      </ul>
+      <div className={styles.sub_container}>
+        <h2 className={styles.headline}>Travel-Memory-Game</h2>
+        <p className={styles.introduction}>
+          You dont know where to spend your next holidays at? No problem, we
+          will help you making that decision.
+          <br /> With our Travel Memory Game we provide you with some beautiful
+          places to visit around the world and you will also have fun to explore
+          them over a round of memory.
+        </p>
+      </div>
+      <div className={styles.sub_container}>
+        <h2 className={styles.headline}> Here are the rules:</h2>
+        <p>The objective is to collect all pairs of cards.</p>
+        <p>
+          Every turn you will turn two cards face up.
+          <br /> If they match you get a point.
+          <br />
+          If they don't match, they're being turned face down again.
+          <br />
+          You have won once all pairs are found and all cards are facing
+          upwards.
+        </p>
+      </div>
     </div>
   );
 }
