@@ -21,7 +21,6 @@ function MemoryBoard() {
   const [layover, setLayover] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [modalIndex, setModalIndex] = useState(1);
-  const [modalData, setModalData] = useState(2);
 
   function shuffleCards(array) {
     return array.sort(() => {
