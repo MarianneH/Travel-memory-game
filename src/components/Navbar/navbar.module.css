@@ -5,10 +5,10 @@
   align-items: center;
   width: 100%;
   background-color: var(--primary-accent);
-  padding: 16px;
+  padding: 1rem;
 }
 .logoImage {
-  width: 50px;
+  width: 3rem;
   aspect-ratio: 1/1;
 }
 
