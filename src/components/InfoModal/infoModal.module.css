@@ -53,14 +53,15 @@
 
 @media screen and (min-width: 700px) {
   .data_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
   }
   .summary {
-    margin: 16px;
+    margin: 1rem;
   }
   .image img {
-    margin-top: 16px;
-    width: 30vw;
-    margin-bottom: 16px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
