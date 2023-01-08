@@ -8,11 +8,11 @@
 }
 
 .grid_main_wrapper {
-  min-height: calc(100vh - 79px);
+  min-height: calc(100vh - 7rem);
   background-color: var(--secondary-accent);
 }
 .grid_footer {
-  height: 79px;
+  height: 5rem;
 }
 
 :root {
