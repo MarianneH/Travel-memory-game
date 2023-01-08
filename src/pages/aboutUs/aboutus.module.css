@@ -3,12 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-bottom: 32px;
-}
-
-.headline {
-  padding-top: 5px;
-  padding: 2vh;
+  padding-bottom: 2rem;
 }
 
 .groupImg {
