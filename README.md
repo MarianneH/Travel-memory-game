@@ -19,7 +19,7 @@ Travel Memory Game is a React application built within a 24 hour hackathon at th
 
 Mobile             |  Desktop
 :-------------------------:|:-------------------------:
-<img src="https://user-images.githubusercontent.com/11974105/211497907-46005693-7cf5-4b40-a13b-c64b4466d0f3.png" alt="travel-memory-mobile" height="500" />| <img src="https://user-images.githubusercontent.com/11974105/211499729-cde8d260-ee5b-4c15-ba17-f59a8b4e8d56.png" alt="travel-memory-desktop" height="500" />
+<img src="https://user-images.githubusercontent.com/11974105/211497907-46005693-7cf5-4b40-a13b-c64b4466d0f3.png" alt="travel-memory-mobile" height="500" width="auto"  />| <img src="https://user-images.githubusercontent.com/11974105/211499729-cde8d260-ee5b-4c15-ba17-f59a8b4e8d56.png" alt="travel-memory-desktop" height="500" width="auto" />
 
 ## Credits
 
